@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo2.css">
+    
+</head>
+
+<body>
+    
+    <div class= "form-container"
+    id="contenedor-formulario">
+
+<h2>Formulario de Reclamo</h2>
+
+<br><br>
+    <form action="" name="formulario" method="get" > 
+        <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" name=" nombre" id="nombre" maxlength="30"
+            placeholder="Tu nombre" required> <br><br>
+        </div>
+        <p>Género 
+                <input type="radio" name="gender" value="hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer" checked>Mujer
+                <input type="radio" name="gender" value="NB" checked>No Binario
+                <br><br>
+            </p>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            placeholder="Tu correo electronico" required><br>
+        </div>
+        <br><br>
+        <div class="alert alert-danger" role="alert">
+            Escribe aqui tu reclamo <a target="_blank" href="https://api.whatsapp.com/send?
+            phone=5493834479734&text=Hola!%20AbraNet!" class="alert-link"> o Escríbenos por whatsapp</a>
+        </div>
+        <br>
+        <div class="campo-mensaje">
+            <label for="mensaje"></label> 
+            <textarea name="menasaje" id="mensaje" cols="98" rows="10"></textarea>
+        </div>
+        <div class="campo-enviar">
+        <input type="submit" id="btn" name="btn" value="Enviar">
+    
+        </div><br>
+        
+        <a href="archivo.pdf" target="_blank">Abrir PDF</a><br>
+    </form>
+<script  src="app.js"></script>                                                                                      
+</body>
+</html>
